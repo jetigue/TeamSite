@@ -1,0 +1,73 @@
+@import "node_modules/bulma/sass/utilities/initial-variables";
+
+$crimson: #73000A;
+$crimson-invert: #fff;
+
+$red: #ff0000;
+
+$primary: $crimson;
+$primary-invert: $crimson-invert;
+$light: #fafafa;
+
+@import "node_modules/bulma/bulma";
+@import "utilities/spacing";
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #fafafa;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-content,
+.tile-container {
+  background: #fafafa;
+}
+
+.page-content {
+  padding-top: 0px;
+}
+
+#app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}
+
+/*
+|--------------------------------------------------------------------------
+| navbar
+|--------------------------------------------------------------------------
+*/
+
+#logo-container {
+  height: 50px;
+  width: 233px;
+  background: url('/images/logo_on_white.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Footer
+|--------------------------------------------------------------------------
+*/
+
+.footer {
+  padding: 20px;
+  border-top: solid thin #73000a;
+}
+
+
